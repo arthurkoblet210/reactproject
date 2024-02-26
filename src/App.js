@@ -1,5 +1,6 @@
-import { useRoutes } from "react-router-dom";
 import Themeroutes from "./routes/Router";
+import { useRoutes } from "react-router-dom";
+
 
 const App = () => {
   const routing = useRoutes(Themeroutes);
