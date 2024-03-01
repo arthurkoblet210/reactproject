@@ -1,13 +1,19 @@
+
+
+// import ReactDOM from "react-dom";
+import React, { Suspense } from "react";
 import App from "./App";
+import {createRoot} from 'react-dom/client';
+const root = createRoot(rootElement);
+import { HashRouter } from "react-router-dom";
+const rootElement = document.getElementById('root');
+import React, { Suspense } from "react";
+import "./assets/scss/style.scss";
+import Loader from "./layouts/loader/Loader";
 import reportWebVitals from "./reportWebVitals";
 import { HashRouter } from "react-router-dom";
-import Loader from "./layouts/loader/Loader";
-import React, { Suspense } from "react";
-// import ReactDOM from "react-dom";
-import {createRoot} from 'react-dom/client';
-import "./assets/scss/style.scss";
 const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
+
 
 root.render(
   <Suspense fallback={<Loader />}>
